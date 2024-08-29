@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-r"></i>
+                    <div class="logo-text">Muhammed Rouf</div>
+                </div>
+                <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://github.com/rouf77">Portfolio</a></li>
+                    <li><a href="https://github.com/rouf77?tab=repositories">Project</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Oj20qwbbjtFxkT5uGDbNdsogAMAEVo9C/view?usp=drive_link">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            </header>
+
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="_MRP2093.jpg" alt="profile pic">
+                </div>
+
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Full Stack Web Developer</span></h5>
+                    <h1>Muhammed Rouf</h1>
+                    <p>I am very much into web development. I am a very thorough web developer both on the front-end and back-end, with a specialization in the MERN stack. My professional experience comprises working with MongoDB, Express.js, React.js, and Node.js which are tools to create applications that are responsive to user needs and centric. My training and the projects that I worked on have given me the skills necessary for writing the code for user interfaces, tweaking the backend to work perfectly, and managing data.</p>
+
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1Oj20qwbbjtFxkT5uGDbNdsogAMAEVo9C/view?usp=drive_link" class="btn active">Download CV</a>
+                        <a href="contact.html" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100055752008397"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammed-rouf-ashraf-840877229/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rouf77"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ro_u_f?utm_source=qr&igsh=MXhlNzJkNmVrNGM1Mw=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- typed js for  typed text effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+
+    <!-- typing function -->
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Full Stack Web Developer","MERN Stack Developer"],
+            typedSpeed:70,
+            backSpeed:50,
+            loop:true
+        })
+    </script>
+</body>
+</html>
